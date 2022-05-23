@@ -1,0 +1,11 @@
+#!/bin/bash
+
+screen
+echo "Gonna launch the python program : \"$1\""
+if [$# > 1]
+then
+	echo "The Argumemt passed to the program \"$\" is : \"$2\""
+	python /
+fi
+###################### NOT FINISHED !!!!!!!!!!!!!!!!!!!!!!!! ########################################
+##          sleep 30
