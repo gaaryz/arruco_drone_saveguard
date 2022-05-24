@@ -1,21 +1,24 @@
 # Default settings for ArduPilot for Linux.
 # The file is sourced by systemd from arducopter.service
 
-#TELEM1="-A udp:192.168.43.44:14550"	#ROG_STRIX LAPTOP
-#TELEM1="-A udp:192.168.1.34:14550"	#TOWER_3080-TI
+#TELEM1="-A udp:192.168.43.44:14550"
+##ROG_STRIX LAPTOP
+#TELEM1="-A udp:192.168.1.34:14550"
+##TOWER_3080-TI
 
-TELEM1="-A udp:127.0.0.1:14550" #WORKING true modems with laptops
+TELEM1="-A udp:127.0.0.1:14550"
+#WORKING true modems with laptops
 
 #TELEM2="-A udp:172.0.0.1:14550"
-TELEM2="-C /dev/ttyUSB0"
+#TELEM2="-C /dev/ttyUSB0"
 
-#TELEM2="-C /dev/ttyUSB_telem"
-#TELEM3="-B /dev/ttyUSB_gps"
+TELEM2="-C /dev/ttyUSB_telem"
+TELEM3="-B /dev/ttyUSB_gps"
 
 #TELEM2="-C udp:192.168.1.34:14550"
 
 # Options to pass to ArduPilot
-ARDUPILOT_OPTS="$TELEM1 $TELEM2" # $TELEM3"
+ARDUPILOT_OPTS="$TELEM1 $TELEM2 $TELEM3"
 
                           #    # ###### #      #####  
                           #    # #      #      #    # 
